@@ -3,6 +3,8 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import ResponsiveNavbar from "@/components/home/navbar/ResponsiveNavbar";
 import Home from "@/components/home/Home";
+import Footer from "@/components/home/footer/Footer";
+import ScrollToTop from "@/components/helper/ScrollToTop";
 
 const font = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -25,6 +27,8 @@ export default function RootLayout({
         <ResponsiveNavbar />
         <Home />
         {children}
+        <Footer />
+        <ScrollToTop />
         </body>
     </html>
   );
